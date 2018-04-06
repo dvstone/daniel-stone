@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Senegal</title>
+    <style>
+        section {
+       display: flex;
+       flex-direction: row;
+       height: 60vh;
+       width: 90vw;
+       }
+        div {  flex: 200px;
+           margin: 0;
+        background: red;
+        transition: 1s all;
+        opacity: 50%;
+
+      }
+        .green  {background: green;}
+        .yellow {background: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .grow { transform: scale(.8);
+    background: blue;
+    border-radius: 50vw;}
+      .shrink {transform: scale(1.2);
+      background: orange; }
+
+
+    </style>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <section>
+      <div class="green">1</div>
+      <div class="yellow">2
+        <nav>
+          <img src="../imgs/star_copy.svg">
+        </nav>
+      </div>
+      <div>3</div>
+
+    </section>
+
+    <script>
+    $("div").click(function() {
+            $(this).toggleClass("grow");
+            $(this).changeClass("shrink");
+
+
+          });
+    </script>
+
+
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Senegal</title>
+    <style>
+        section {
+       display: flex;
+       flex-direction: row;
+       height: 60vh;
+       width: 90vw;
+       }
+        div {  flex: 200px;
+           margin: 0;
+        background: red;
+      }
+        .green  {background: green;}
+        .yellow {background: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <section>
+      <div class="green">1</div>
+      <div class="yellow">2
+        <nav>
+          <img src="/img/star.svg">
+        </nav>
+      </div>
+      <div>3</div>
+    </section>
+
+    <script>
+    $("div").click(function() {
+            $(this).toggleClass("grow");
+            $(this).toggleClass("bodybackgroundblue");
+            $(this).find('img').toggle();
+          });
+    </script>
+
+
+  </body>
+</html>
