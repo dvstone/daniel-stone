@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <style>
+      *, body, h1, h2 {margin: 0;}
+      body {margin:0;}
+      section {border: 1px solid red;
+      width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(24, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-gap: 10px;
+
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: 200px minmax(500px, auto);
+        grid-gap: 10px;
+        font: 100% 'Apercu';
+        background: rgba(0,0,255,0.3);
+        transform: scale(.9);
+      }
+
+      div {background: rgba(0,255,0,0.7);
+        /*transform: rotate(30deg);*/
+        border-radius: 100px;
+        }
+      .blah {grid-column: 4/25;
+      grid-row: 1/2; z-index: 100;
+      mix-blend-mode: soft-light;
+      }
+      .blahblah {grid-column: 3/8;
+      grid-row: 2/3; z-index: 100;
+      background: rgba(0,255,255,0.5)
+      }
+      .circle {
+        grid-column: 4/25;
+        grid-row: 3/4; z-index: 100;
+        mix-blend-mode: soft-light;
+        height:200px;
+        width:200px;
+        background:white;
+        border-radius:200px;}
+
+    </style>
+  </head>
+
+  <body>
+    <section class="grid">
+      <div><h1>1</h1></div>
+        <div><h1>1</h1></div>
+          <div><h1>1</h1></div>
+      <div class="blah">BLAH!</div>
+      <div class="blahblah">BLAHBLAH!</div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div "circle"></div>
+      <div><h1>1</h1></div>
+      <div><h1>1</h1></div>
+      <div><h1>1</h1></div>
+      <div><h1>1</h1></div>
+    </body>
+</html>

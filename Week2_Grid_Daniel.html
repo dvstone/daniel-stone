@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <style>
+      *, body, h1, h2 {margin: 0;}
+      body {margin:0;}
+      section {border: 1px solid red;
+      width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 10px;
+
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2fr,1fr);
+        grid-auto-rows: 90px minmax(200px, auto);
+        grid-gap: 10px;
+        font: 100% 'Apercu';
+        background: rgba(0,0,255,0.3);
+        transform: scale(.9);
+        mix-blend-mode: multiply;
+        position: fixed;
+      }
+      .grid > div:nth-child(1) {
+        grid-column:1/3;
+        grid-row: 1/3;
+      }
+      .grid > div:nth-child(2) {
+        grid-column:2/4;
+        grid-row: 2/4;
+      }
+      .grid > div:nth-child(3) {
+        grid-column:3/5;
+        grid-row: 3/5;
+      }
+      .grid > div:nth-child(4) {
+        grid-column:4/6;
+        grid-row: 4/6;
+        mix-blend-mode: color-burn;
+        background: rgba(255,255,0,0.5);
+      }
+      .grid2 {
+        display: grid;
+        grid-template-columns: repeat(4fr,1fr);
+        grid-auto-rows: 50px minmax(100px, auto);
+        grid-gap: 5px;
+        font: 100% 'Apercu';
+        background: rgba(255,0,0,0.3);
+        mix-blend-mode: luminosity;
+        /*transform: translatey(-500px);*/
+        position: relative;
+
+
+      }
+      div { background: rgba(0,255,0,0.5);
+      transform: rotate(30deg);
+      border-radius: 100px;
+      }
+      .blah {grid-column: 4/25;
+      grid-row: 2/4; z-index: 100;
+      mix-blend-mode: soft-light;
+      }
+      .blahblah {grid-column: 3/8;
+      grid-row: 2/4; z-index: 100;
+      background: rgba(0,255,255,0.5)
+      }
+    </style>
+  </head>
+
+  <body>
+
+      <section class="grid">
+      <div class="blah">BLAH!</div>
+        <div>1</div>
+          <div>2</div>
+            <div>3</div>
+              <div>4</div>
+                <div>1</div>
+      <div class="blahblah">BLAHBLAH!</div>
+      <div><h1>AAAA</h1></div>
+      <div><h1>BBBB</h1></div>
+      <div><h2>CCCC</h2></div>
+      <div><h2>DDDD</h2></div>
+      <div><h2>A</h2></div>
+      <div><h2>B</h2></div>
+      <div><h2>C</h2></div>
+      <div><h2>D</h2></div>
+      <div><h2>E</h2></div>
+      <div><h2>F</h2></div>
+      <div><h2>G</h2></div>
+      <div>
+        <h2>Groceries</h2>
+          <ul>
+            <li>Eggs</li>
+            <li>Milk</li>
+            <li>Butter</li>
+            <li>Meat</li>
+            <li>Peanut Butter</li>
+            <li>Spaghetti</li>
+            <li>Sauce</li>
+            <li>Yogurt</li>
+          </ul>
+      </div>
+
+    </section>
+
+     <div class="grid2">
+      <div><h2>1</h2></div>
+      <div><h2>2</h2></div>
+      <div><h2>3</h2></div>
+      <div><h2>4</h2></div>
+      <div><h2>5</h2></div>
+      <div><h2>6</h2></div>
+      <div><h2>7</h2></div>
+      <div><h2>8</h2></div>
+      Text within the grid! Text Text Text... Text Text Text...Text Text Text...Text Text Text...
+      <div class="font">Font: Apercu</div>
+    */
+
+    </div>
+
+
+
+
+</html>

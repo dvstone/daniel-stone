@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <style>
+      *, body, h1, h2 { margin: 0; }
+      body { margin: 0; }
+      section { background: red;
+      width: 100vw; height: 500px;
+       display: grid;
+       grid-template-columns:(1);
+       grid-template-rows: repeat(13,1fr);
+       grid-gap: 1px;
+      }
+      div:nth-child(odd) {background: red}
+      div:nth-child(even) {background: white}
+
+      .first div {width: 100%; height:100%;}
+
+      .blue div {width: 250px; height: 250px; z-index:1; background: blue;}
+      div {background: blue;}
+      .bluebackground {
+        background: blue;
+      }
+
+
+
+      </style>
+    </head>
+
+    <body>
+
+      <section class="first">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+      </section>
+
+      <section class="blue">
+        <div></div>
+
+      </section>
+
+
+
+
+    </body>
+
+  </html>
