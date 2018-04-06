@@ -10,4 +10,4 @@ part of wp18
 
 *https://dvstone.github.io/daniel-stone-wp18/American_Flag.html
 
-*https://dvstone.github.io/daniel-stone-wp185_objects copy.html
+*https://dvstone.github.io/daniel-stone-wp185_objects_copy.html
